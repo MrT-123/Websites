@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Concatenator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Text Concatenator</h1>
+        
+        <div class="input-section">
+            <h2>Add Text Strings</h2>
+            <textarea id="textInput" placeholder="Enter text to add to your collection..."></textarea>
+            <button id="addText">Add Text</button>
+            <button id="clearAll">Clear All Data</button>
+        </div>
+
+        <div class="selection-section">
+            <h2>Select Text to Concatenate</h2>
+            <div id="textGrid" class="text-grid">
+                <!-- Checkboxes will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="output-section">
+            <h2>Concatenated Output</h2>
+            <textarea id="output" readonly placeholder="Selected text will appear here..."></textarea>
+            <button id="copyOutput">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
