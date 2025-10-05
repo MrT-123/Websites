@@ -79,7 +79,7 @@ class TextConcatenator {
             // Add delete button
             const deleteBtn = document.createElement('button');
             deleteBtn.textContent = '×';
-            deleteBtn.style.cssText = 'background: #dc3545; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; cursor: pointer; margin-left: 5px; flex-shrink: 0;';
+            deleteBtn.style.cssText = 'background: #dc3545; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; min-width: 20px; min-height: 20px; font-size: 12px; cursor: pointer; margin-left: 5px; flex-shrink: 0; padding: 0; display: flex; align-items: center; justify-content: center; line-height: 1;';
             deleteBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 this.deleteItem(item.id);
